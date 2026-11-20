@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>~*~ Welcome to My Homepage! ~*~</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;padding:8px;font-family:Verdana,Geneva,Tahoma,sans-serif;font-size:13px;color:#fff;
+background-color:#000033;
+background-image:radial-gradient(#fff 1px,transparent 1px),radial-gradient(#9cf 1px,transparent 1px);
+background-size:47px 47px,83px 83px;background-position:0 0,20px 31px}
+a{color:#ffff00}a:visited{color:#ff99ff}a:hover{color:#00ffff;background:#ff0000}
+#wrap{max-width:760px;margin:0 auto;border:4px ridge #c0c0c0;background:#000066}
+h1{font-family:"Comic Sans MS","Comic Sans",cursive;font-size:30px;text-align:center;margin:10px 0 4px;
+color:#ff0;text-shadow:3px 3px #f0f,-1px -1px #0ff}
+h2{font-family:"Comic Sans MS","Comic Sans",cursive;font-size:17px;margin:0 0 6px;background:#003399;border:2px outset #6699ff;padding:3px 6px;color:#fff}
+.blink{animation:b 1s steps(2,start) infinite}@keyframes b{to{visibility:hidden}}
+.rainbow{height:6px;border:0;background:linear-gradient(90deg,red,orange,yellow,lime,cyan,blue,magenta,red);margin:8px 0}
+marquee{background:#000;color:#0f0;font-family:"Courier New",monospace;font-size:14px;padding:3px;border-top:2px inset #888;border-bottom:2px inset #888}
+table{border-collapse:separate}
+#layout{width:100%;border-spacing:6px}
+#layout td{vertical-align:top}
+#nav{width:150px;background:#000033;border:3px groove #99f;padding:6px}
+#nav a{display:block;margin:3px 0;padding:3px 5px;background:#c0c0c0;color:#000;text-decoration:none;border:2px outset #fff;font-weight:bold;font-size:12px}
+#nav a:hover{background:#ffff99;border-style:inset;color:#000}
+.box{border:3px double #99ccff;background:#000044;padding:8px;margin-bottom:10px}
+.proj{border:2px inset #888;background:#001a66;padding:6px;margin:6px 0}
+.proj b{color:#0ff}
+.tag{display:inline-block;background:#ff0;color:#000;border:1px solid #fff;font-size:10px;padding:0 4px;margin:1px;font-weight:bold}
+.cnt{font-family:"Courier New",monospace;background:#000;color:#f00;border:3px inset #888;padding:2px 6px;letter-spacing:3px;font-size:16px}
+.skills td{border:1px solid #6699ff;padding:3px 8px}
+.btn88{display:inline-block;width:88px;height:31px;line-height:31px;text-align:center;border:2px outset #ccc;background:#808080;color:#fff;font-size:9px;font-weight:bold;margin:2px}
+.footer{text-align:center;font-size:11px;padding:8px;color:#9cf}
+.ie{border:1px solid #888;background:#ece9d8;color:#000;padding:4px;font-size:11px;margin:6px;text-align:center}
+.art{display:inline-block;width:46%;min-width:120px;vertical-align:top;margin:4px 1%;border:2px inset #888;background:#001a66;padding:5px;text-align:center}
+.art .pic{height:90px;border:2px solid #fff;background:repeating-conic-gradient(#336 0 25%,#449 0 50%) 0 0/16px 16px;display:flex;align-items:center;justify-content:center;font-size:34px;image-rendering:pixelated}
+.art b{color:#0ff;display:block;margin-top:4px}.art small{display:block;font-size:10px;color:#cde}
+#pop{display:none;position:fixed;inset:0;z-index:99;background:rgba(0,0,0,.45);align-items:center;justify-content:center;padding:12px}
+#pop.on{display:flex}
+.win{width:320px;max-width:100%;background:#c0c0c0;color:#000;border:2px outset #fff;box-shadow:4px 4px 0 #000;font-size:12px}
+.win .tb{background:linear-gradient(90deg,#000080,#1084d0);color:#fff;font-weight:bold;padding:3px 4px;display:flex;justify-content:space-between;align-items:center}
+.win .x{width:18px;height:16px;line-height:12px;text-align:center;background:#c0c0c0;color:#000;border:2px outset #fff;cursor:pointer;font-weight:bold;padding:0;font-size:11px}
+.win .bd{padding:12px;text-align:center}
+.win .bd h3{font-family:"Comic Sans MS",cursive;color:#c00;margin:0 0 6px;font-size:18px}
+.win button{font-family:inherit;font-size:12px;background:#c0c0c0;border:2px outset #fff;padding:3px 12px;margin:4px 2px;cursor:pointer;color:#000}
+.win button:active{border-style:inset}
+details.art2{margin:6px 0;border:2px outset #c0c0c0;background:#001a66}
+details.art2 summary{cursor:pointer;background:#c0c0c0;color:#000;font-weight:bold;padding:5px 8px;list-style:none;font-size:13px}
+details.art2 summary::-webkit-details-marker{display:none}
+details.art2 summary::before{content:"\25B6  "}
+details.art2[open] summary::before{content:"\25BC  "}
+details.art2 summary:hover,details.art2[open] summary{background:#ffff99}
+details.art2 .in{padding:8px}
+.spwrap{text-align:center}
+.spwrap small{display:block;margin-top:4px;color:#cde}
+.spr{width:144px;height:144px;image-rendering:pixelated;border:3px ridge #c0c0c0;background-color:#223;background-repeat:no-repeat;background-position:0 0}
+.spr.walk{background-image:url(assets/sprite-walk.png);background-size:864px 144px;animation:walk .6s steps(6) infinite}
+.spr.idle{background-image:url(assets/sprite-idle.png);background-size:3744px 144px;animation:idle 2.1s steps(26) infinite}
+@keyframes walk{to{background-position:-864px 0}}
+@keyframes idle{to{background-position:-3744px 0}}
+.spr.hurt{background-image:url(assets/sprite-hurt.png);background-size:432px 144px;animation:hurt .6s steps(3) infinite}
+@keyframes hurt{to{background-position:-432px 0}}
+.spr.sword{width:192px;height:96px;background-image:url(assets/sprite-sword.png);background-size:1344px 96px;animation:sword .8s steps(7) infinite}
+@keyframes sword{to{background-position:-1344px 0}}
+@media(max-width:600px){#layout,#layout tbody,#layout tr,#layout td{display:block;width:auto}#nav{width:auto}}
+</style>
+</head>
+<body>
+<div id="wrap">
+<marquee scrollamount="5">*** Welcome to my homepage!!! *** Thanks for visiting *** Currently looking for an OJT placement ***</marquee>
+
+<h1>~*~ Jairus&rsquo;s Homepage ~*~</h1>
+<p style="text-align:center;margin:0"><span class="blink" style="color:#f33;font-weight:bold">&#9888; UNDER CONSTRUCTION &#9888;</span><br>
+<small>Aspiring Concept &amp; 3D Hard Surface Artist &bull; BSIT @ STI College Legazpi</small></p>
+<hr class="rainbow">
+
+<table id="layout"><tr>
+<td id="nav">
+<b style="color:#ff0">&raquo; MENU</b>
+<a href="#about">About Me</a>
+<a href="#projects">Projects</a>
+<a href="#art">Art</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+<hr class="rainbow">
+<div style="text-align:center;font-size:11px">You are visitor<br><span class="cnt" id="cnt">000042</span></div>
+<div class="ie">Best viewed in Internet Explorer 6.0 at 800x600</div>
+</td>
+
+<td>
+<div class="box" id="about">
+<h2>&#9733; About Me &#9733;</h2>
+<p>I&rsquo;m Jairus Patric Mabelin, an aspiring concept artist and 3D hard surface artist based in Legazpi, Philippines. I&rsquo;m a BSIT student at STI College Legazpi with experience in 3D modeling, game asset creation and software testing. I&rsquo;m looking to gain hands-on experience in the game development industry while continuing to build my art and programming skills.</p>
+<p><a href="#">&raquo; Download my Resume (PDF) &laquo;</a></p>
+</div>
+
+<div class="box" id="projects">
+<h2>&#9733; My Projects &#9733;</h2>
+<div class="proj"><b>Visual Attention Mapping Tool</b> <span class="tag">CAPSTONE</span><br>
+A web-based visual attention mapping tool. My role: tester, plus some coding assistance.<br>
+<span class="tag">Testing</span><span class="tag">Coding</span><span class="tag">Web</span></div>
+<div class="proj"><b>Eventease</b> <span class="tag">CAPSTONE</span><br>
+A school event management web app. My role: tester, plus some coding assistance.<br>
+<span class="tag">Testing</span><span class="tag">Coding</span><span class="tag">Web</span></div>
+<div class="proj"><b>Game Modding</b> <span class="tag">PERSONAL</span><br>
+Made custom assets and did basic programming for game mods. Featured: <a href="https://modrinth.com/project/sao9GJ5t" target="_blank" rel="noopener">Aiko&rsquo;s Rifled Enchantment</a>, a Minecraft data pack that turns a crossbow into a gun.<br>
+Dungreed Steam Workshop costumes: <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3045260244" target="_blank" rel="noopener">Aiko</a> and <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3045297283" target="_blank" rel="noopener">Envyrok</a>.<br>
+<span class="tag">Game Assets</span><span class="tag">Programming</span><span class="tag">Minecraft</span><span class="tag">Data Pack</span><span class="tag">Steam Workshop</span></div>
+</div>
+
+<div class="box" id="art">
+<h2>&#9733; Art &#9733;</h2>
+<p style="margin:2px 0 6px"><small>Click a title to open it!</small></p>
+<details class="art2"><summary>Spritework</summary><div class="in">Pixel art made in Aseprite. Animated sprites:
+<div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:8px">
+<div class="spwrap"><div class="spr walk" role="img" aria-label="Walk animation"></div><small>Walk (6 frames)</small></div>
+<div class="spwrap"><div class="spr idle" role="img" aria-label="Idle animation"></div><small>Idle (26 frames)</small></div>
+<div class="spwrap"><div class="spr hurt" role="img" aria-label="Hurt animation"></div><small>Hurt (3 frames)</small></div>
+<div class="spwrap"><div class="spr sword" role="img" aria-label="Sword animation"></div><small>Sword (7 frames)</small></div>
+</div>
+<p style="margin:8px 0 0"><small>Sprite sheets: <a href="assets/sprite-walk.png" target="_blank" rel="noopener">walk</a> | <a href="assets/sprite-idle.png" target="_blank" rel="noopener">idle</a> | <a href="assets/sprite-hurt.png" target="_blank" rel="noopener">hurt</a> | <a href="assets/sprite-sword.png" target="_blank" rel="noopener">sword</a></small></p></div></details>
+<details class="art2"><summary>3D Modelling</summary><div class="in">Models made in Blockbench. Showcase video:<br><video controls preload="metadata" src="assets/model-showcase.mp4" style="display:block;max-width:100%;height:auto;margin-top:6px;border:3px ridge #c0c0c0;background:#000">Your browser can&rsquo;t play this video.</video>
+<p style="margin:12px 0 4px"><b style="color:#ff0">Process documentation</b><br><small>Work-in-progress shots from Blockbench. Click an image to see it full size.</small></p>
+<div style="display:flex;flex-wrap:wrap;gap:8px">
+<a href="assets/process-1.png" target="_blank" rel="noopener" style="background:none"><img src="assets/process-1.png" alt="Process shot 1: sword model in Blockbench" style="display:block;max-width:100%;height:auto;max-height:260px;border:3px ridge #c0c0c0;background:#000"></a>
+<a href="assets/process-2.png" target="_blank" rel="noopener" style="background:none"><img src="assets/process-2.png" alt="Process shot 2: sword model in Blockbench" style="display:block;max-width:100%;height:auto;max-height:260px;border:3px ridge #c0c0c0;background:#000"></a>
+<a href="assets/process-3.png" target="_blank" rel="noopener" style="background:none"><img src="assets/process-3.png" alt="Process shot 3: sword model in Blockbench" style="display:block;max-width:100%;height:auto;max-height:260px;border:3px ridge #c0c0c0;background:#000"></a>
+<a href="assets/process-4.png" target="_blank" rel="noopener" style="background:none"><img src="assets/process-4.png" alt="Process shot 4: sword model in Blockbench" style="display:block;max-width:100%;height:auto;max-height:260px;border:3px ridge #c0c0c0;background:#000"></a>
+</div>
+<p style="margin:12px 0 4px"><b style="color:#ff0">Final result: in Minecraft</b><br><small>The finished model rendered in-game. Click the image to see it full size.</small></p>
+<a href="assets/in-game.png" target="_blank" rel="noopener" style="background:none"><img src="assets/in-game.png" alt="The sword model rendered in Minecraft" style="display:block;max-width:100%;height:auto;border:3px ridge #c0c0c0;background:#000"></a></div></details>
+</div>
+
+<div class="box" id="skills">
+<h2>&#9733; Skills &#9733;</h2>
+<table class="skills" style="width:100%">
+<tr><td>3D Modeling (Blockbench)</td><td>Pixel Art (Aseprite)</td></tr>
+<tr><td>Game Asset Creation</td><td>Java Fundamentals</td></tr>
+<tr><td>Bug Identification</td><td>Troubleshooting</td></tr>
+</table>
+</div>
+
+<div class="box" id="contact">
+<h2>&#9733; Contact Me &#9733;</h2>
+<p>&#9993; Email: <a href="mailto:mabelin.jairuspatric@gmail.com">mabelin.jairuspatric@gmail.com</a><br>
+&#9742; Phone: +63 945 380 3786<br>
+&#128205; Legazpi, Philippines<br>
+&#128188; LinkedIn: <a href="https://www.linkedin.com/in/jairus-patric-mabelin-765333441/" target="_blank" rel="noopener">Jairus Patric Mabelin</a></p>
+</div>
+
+</td>
+</tr></table>
+
+<hr class="rainbow">
+<div class="footer"><span class="blink">&hearts;</span> Thanks for stopping by! <span class="blink">&hearts;</span></div>
+</div>
+<script>
+(function(){var n=42;try{n=parseInt(localStorage.getItem('vc')||'42',10)+1;localStorage.setItem('vc',String(n))}catch(e){}
+document.getElementById('cnt').textContent=('000000'+n).slice(-6)})();
+</script>
+</body>
+</html>
